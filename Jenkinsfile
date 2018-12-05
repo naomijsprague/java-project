@@ -16,6 +16,6 @@ node('linux') {
 
     stage ("Deploy"){
 
-    sh "aws s3 cp /workspace/java-pipeline/dist/rectangle-*.jar seis665-03-nspra1328" 
+    sh "aws s3 cp /workspace/java-pipeline/dist/rectangle-*.jar s3://seis665-03-nspra1328" 
    }
 }
